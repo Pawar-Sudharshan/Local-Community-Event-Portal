@@ -278,3 +278,53 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #e6f7ff;
 }
+
+
+/* =========================
+   Event Card Box Model
+   ========================= */
+
+.eventCard {
+    width: 300px;
+
+    /* Content spacing */
+    padding: 20px;
+
+    /* Border around element */
+    border: 2px solid #007BFF;
+
+    /* Space outside the border */
+    margin: 20px;
+
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+
+/* =========================
+   Form Field Outline
+   ========================= */
+
+.selected-field:focus {
+    outline: 3px solid orange;
+}
+
+
+/* =========================
+   Visibility Examples
+   ========================= */
+
+/* Element is invisible but space remains */
+.hidden-box {
+    visibility: hidden;
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Element is completely removed */
+.none-box {
+    display: none;
+    background-color: lightgreen;
+    padding: 10px;
+}
