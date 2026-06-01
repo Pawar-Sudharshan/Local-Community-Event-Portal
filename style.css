@@ -243,3 +243,38 @@ a:active {
     margin: 8px 0;
     padding: 5px;
 }
+
+/* =========================
+   Table Styling
+   ========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Table Header */
+th {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* Table Cells */
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Zebra Striping */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover Effect (Optional) */
+tr:hover {
+    background-color: #e6f7ff;
+}
