@@ -177,3 +177,69 @@ body {
     letter-spacing: 1px;
     line-height: 1.8;
 }
+
+
+/* =========================
+   Link Styling
+   ========================= */
+
+/* Unvisited link */
+a:link {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+/* Visited link */
+a:visited {
+    color: #800080;
+}
+
+/* Mouse hover */
+a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+/* Active link */
+a:active {
+    color: #ff0000;
+}
+
+
+/* =========================
+   Navigation Menu
+   ========================= */
+
+/* Remove bullets from navigation */
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+}
+
+.nav-menu li {
+    display: inline-block;
+    padding: 12px 20px;
+}
+
+.nav-menu a {
+    color: white;
+}
+
+
+/* =========================
+   Event List Styling
+   ========================= */
+
+.event-list {
+    list-style-type: square;
+    list-style-position: inside;
+    margin: 20px;
+    padding: 10px;
+}
+
+.event-list li {
+    margin: 8px 0;
+    padding: 5px;
+}
