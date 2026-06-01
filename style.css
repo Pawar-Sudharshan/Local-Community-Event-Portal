@@ -1,14 +1,63 @@
-body{
+/* =========================
+   Page Layout and Typography
+   ========================= */
+
+body {
     width: 80%;
     margin: 0 auto;
-    color: #b72323;
     padding: 20px;
     background-color: gray;
+    color: #b72323;
     font-family: Arial, sans-serif;
 }
 
-p{
+
+/* =========================
+   Main Heading Style
+   ========================= */
+
+h1 {
+    color: #e0b714;
+    text-align: center;
+}
+
+
+/* =========================
+   Paragraph Text Style
+   ========================= */
+
+p {
     font-size: 18px;
     line-height: 1.5;
     color: #5f14e0;
+}
+
+
+/* =========================
+   Container for Content
+   ========================= */
+
+.container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================
+   Style for Main CTA Button
+   ========================= */
+
+.cta-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
 }
