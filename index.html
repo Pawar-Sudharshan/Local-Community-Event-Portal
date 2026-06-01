@@ -3,113 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community Event Portal</title>
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Local Community Event Portal</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <!-- Exercise 1: Internal CSS -->
+    <!-- <style>
+        body{
+            background-color:#e8f4ff;
+        }
+    </style> -->
+
+    <!-- Exercise 1: External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="section-header">
-        <h1>Local Community Event Portal</h1>
+    <!-- Exercise 1: Inline CSS -->
+    <h1 style="color:red;">Welcome to the Local Community Event Portal</h1>
+
+    <!-- Exercise 3: ID Selector -->
+    <header id="mainHeader">
+        <h1>Community Events</h1>
     </header>
 
-    <section class="eventCard">
-        <h2>Summer Festival 2025</h2>
-        <p class="description">
-            Join the community for music, food, games, and entertainment.
-            Bring your family and enjoy a fun-filled evening.
-        </p>
+    <!-- Exercise 6: Navigation -->
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Exercise 4: Gradient Header -->
+    <section class="section-header">
+        <h2>Upcoming Events</h2>
     </section>
 
+    <!-- Exercise 3 & 8 -->
+    <div class="event-container">
 
-    <nav>
-    <ul class="nav-menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
+        <div class="eventCard">
+            <img src="https://via.placeholder.com/400x200"
+                 alt="Event">
 
-<h2>Upcoming Activities</h2>
-<ul class="event-list">
-    <li>Community Cleanup Drive</li>
-    <li>Food Festival</li>
-    <li>Charity Run</li>
-</ul>
+            <h3>Music Festival</h3>
 
-<p>
-    Visit our
-    <a href="https://example.com">official website</a>
-    for more details.
-</p>
+            <p class="description">
+                Enjoy live music performances from talented artists across the city.
+            </p>
 
+            <button class="cta-button">
+                Register Now
+            </button>
+        </div>
 
+        <div class="eventCard">
+            <img src="https://via.placeholder.com/400x200"
+                 alt="Event">
 
-<h2>Event Administration Table</h2>
+            <h3>Food Fair</h3>
 
-<table>
-    <tr>
-        <th>Event ID</th>
-        <th>Event Name</th>
-        <th>Date</th>
-        <th>Status</th>
-    </tr>
+            <p class="description">
+                Taste delicious dishes from local restaurants and vendors.
+            </p>
 
-    <tr>
-        <td>101</td>
-        <td>Music Festival</td>
-        <td>10-Jun-2025</td>
-        <td>Active</td>
-    </tr>
+            <button class="cta-button">
+                Join Event
+            </button>
+        </div>
 
-    <tr>
-        <td>102</td>
-        <td>Food Fair</td>
-        <td>15-Jun-2025</td>
-        <td>Active</td>
-    </tr>
-
-    <tr>
-        <td>103</td>
-        <td>Book Exhibition</td>
-        <td>20-Jun-2025</td>
-        <td>Pending</td>
-    </tr>
-
-    <tr>
-        <td>104</td>
-        <td>Charity Run</td>
-        <td>25-Jun-2025</td>
-        <td>Active</td>
-    </tr>
-</table>
-
-
-
- <div class="eventCard">
-        <h2>Community Festival</h2>
-        <p>Enjoy music, food, and games with your neighbors.</p>
     </div>
 
-    <form>
-        <label>Name:</label>
-        <input type="text" class="selected-field">
-    </form>
+    <!-- Exercise 6: List Styling -->
+    <section>
+        <h2>Event Categories</h2>
 
-    <div class="hidden-box">
-        This uses visibility: hidden
-    </div>
+        <ul class="event-list">
+            <li>Sports Events</li>
+            <li>Cultural Programs</li>
+            <li>Workshops</li>
+            <li>Community Meetings</li>
+        </ul>
+    </section>
 
-    <div class="none-box">
-        This uses display: none
-    </div>
+    <!-- Exercise 7: Table -->
+    <section>
 
+        <h2>Events Administration</h2>
+
+        <table>
+
+            <tr>
+                <th>ID</th>
+                <th>Event</th>
+                <th>Date</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>101</td>
+                <td>Music Festival</td>
+                <td>12/08/2025</td>
+                <td>Active</td>
+            </tr>
+
+            <tr>
+                <td>102</td>
+                <td>Food Fair</td>
+                <td>15/08/2025</td>
+                <td>Active</td>
+            </tr>
+
+            <tr>
+                <td>103</td>
+                <td>Book Exhibition</td>
+                <td>20/08/2025</td>
+                <td>Pending</td>
+            </tr>
+
+            <tr>
+                <td>104</td>
+                <td>Charity Run</td>
+                <td>25/08/2025</td>
+                <td>Active</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- Exercise 8: Form Outline -->
+    <section>
+
+        <h2>Event Registration</h2>
+
+        <form>
+
+            <input
+                type="text"
+                placeholder="Enter Name"
+                class="selected-field">
+
+            <br><br>
+
+            <input
+                type="email"
+                placeholder="Enter Email">
+
+        </form>
+
+    </section>
+
+    <!-- Exercise 8 -->
+    <section>
+
+        <h2>Visibility Demo</h2>
+
+        <div class="hidden-box">
+            visibility:hidden
+        </div>
+
+        <div class="none-box">
+            display:none
+        </div>
+
+    </section>
+
+    <!-- Exercise 9 -->
+    <section class="news-article">
+
+        <h2>Community Bulletin</h2>
+
+        <p>
+            The city council announced several development initiatives for
+            improving parks, roads, public transportation and recreational
+            facilities. Residents are encouraged to participate in upcoming
+            events and workshops. Additional resources will be available
+            online through the community portal.
+
+            New sports facilities and youth engagement programs are also
+            being introduced. Community members can register online and
+            stay informed about future projects and activities.
+        </p>
+
+    </section>
 
 </body>
 </html>

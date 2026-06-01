@@ -1,330 +1,290 @@
-/* =========================
-   Page Layout and Typography
-   ========================= */
+/* ==================================
+   Exercise 2 & 3
+   Universal Selector Reset
+================================== */
 
-body {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: gray;
-    color: #b72323;
-    font-family: Arial, sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
+/* ==================================
+   Body Styles
+================================== */
 
-/* =========================
-   Main Heading Style
-   ========================= */
+body{
+    font-family:'Poppins',sans-serif;
 
-h1 {
-    color: #e0b714;
-    text-align: center;
+    background-color:#dcefff;
+
+    background-image:url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
+
+    background-size:cover;
+    background-attachment:fixed;
+
+    width:90%;
+    margin:auto;
 }
 
+/* ==================================
+   Header Styles
+================================== */
 
-/* =========================
-   Paragraph Text Style
-   ========================= */
-
-p {
-    font-size: 18px;
-    line-height: 1.5;
-    color: #5f14e0;
+#mainHeader{
+    background-color:rgba(0,123,255,0.8);
+    color:white;
+    padding:20px;
+    text-align:center;
 }
 
+/* ==================================
+   Element Selector
+================================== */
 
-/* =========================
-   Container for Content
-   ========================= */
-
-.container {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+h2{
+    color:#003366;
+    margin:20px 0;
 }
 
+/* ==================================
+   Gradient Section Header
+================================== */
 
-/* =========================
-   Style for Main CTA Button
-   ========================= */
-
-.cta-button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.cta-button:hover {
-    background-color: #0056b3;
-}
-
-/* Universal Selector - Reset default spacing */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* ID Selector - Main banner/header */
-#mainHeader {
-    background-color: #007BFF;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-/* Element Selector - Style all h2 elements */
-h2 {
-    color: #333;
-    margin: 20px;
-    text-align: center;
-}
-
-/* Class Selector - Event card containers */
-.eventCard {
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    margin: 20px;
-}
-
-/* Grouping Selector - Style h3 and p together */
-h3,
-p {
-    font-family: Arial, sans-serif;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-/* =========================
-   Global Styles
-   ========================= */
-
-/* Background image with fallback color */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #e6f2ff; /* Fallback color */
-    background-image: url("images/city-background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    margin: 0;
-    padding: 20px;
-}
-
-
-/* =========================
-   Section Header
-   ========================= */
-
-/* Linear Gradient Background */
-.section-header {
-    background: linear-gradient(
+.section-header{
+    background:linear-gradient(
         to right,
-        #004e92,
-        #000428
+        #005aa7,
+        #00c6ff
     );
 
-    padding: 25px;
-    text-align: center;
-    border-radius: 8px;
+    padding:20px;
+    color:white;
+    text-align:center;
 }
 
-.section-header h1 {
-    color: #ffffff;
-    font-size: 36px;
-    font-weight: 700;
+/* ==================================
+   Grouping Selector
+================================== */
+
+h3,
+p{
+    color:#444;
 }
 
+/* ==================================
+   Event Cards
+================================== */
 
-/* =========================
-   Event Card
-   ========================= */
-
-.eventCard {
-    background-color: rgba(255, 255, 255, 0.9); /* RGBA */
-    margin-top: 20px;
-    padding: 20px;
-    border-radius: 10px;
+.event-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
-.eventCard h2 {
-    color: #0066cc; /* HEX color */
-    font-size: 28px;
-    font-weight: 600;
-    font-style: italic;
+.eventCard{
+
+    background-color:rgba(255,255,255,0.9);
+
+    width:45%;
+
+    border:2px solid #007BFF;
+
+    padding:20px;
+
+    margin:20px 0;
+
+    border-radius:10px;
 }
 
-
-/* =========================
-   Description Text
-   ========================= */
-
-.description {
-    color: #333333;
-    font-size: 18px;
-    font-weight: 400;
-    font-style: normal;
-
-    text-align: justify;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    line-height: 1.8;
+.eventCard img{
+    width:100%;
 }
 
+/* ==================================
+   Typography
+================================== */
 
-/* =========================
-   Link Styling
-   ========================= */
+.description{
 
-/* Unvisited link */
-a:link {
-    color: #0066cc;
-    text-decoration: none;
+    font-size:18px;
+
+    font-style:italic;
+
+    font-weight:400;
+
+    text-align:justify;
+
+    text-transform:capitalize;
+
+    letter-spacing:1px;
+
+    line-height:1.8;
 }
 
-/* Visited link */
-a:visited {
-    color: #800080;
+/* ==================================
+   CTA Button
+================================== */
+
+.cta-button{
+    background-color:#007BFF;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    margin-top:10px;
+    cursor:pointer;
 }
 
-/* Mouse hover */
-a:hover {
-    color: #ff6600;
-    text-decoration: underline;
+/* ==================================
+   Links
+================================== */
+
+a:link{
+    color:white;
 }
 
-/* Active link */
-a:active {
-    color: #ff0000;
+a:visited{
+    color:lightgray;
 }
 
+a:hover{
+    color:yellow;
+}
 
-/* =========================
+a:active{
+    color:red;
+}
+
+/* ==================================
    Navigation Menu
-   ========================= */
+================================== */
 
-/* Remove bullets from navigation */
-.nav-menu {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    background-color: #333;
+.nav-menu{
+    list-style-type:none;
+    display:flex;
+    justify-content:center;
+    background:#333;
 }
 
-.nav-menu li {
-    display: inline-block;
-    padding: 12px 20px;
+.nav-menu li{
+    padding:15px;
+    margin:5px;
 }
 
-.nav-menu a {
-    color: white;
+/* ==================================
+   Event List
+================================== */
+
+.event-list{
+    list-style-type:square;
+    list-style-position:inside;
+    margin:20px;
 }
 
-
-/* =========================
-   Event List Styling
-   ========================= */
-
-.event-list {
-    list-style-type: square;
-    list-style-position: inside;
-    margin: 20px;
-    padding: 10px;
+.event-list li{
+    padding:5px;
+    margin:5px;
 }
 
-.event-list li {
-    margin: 8px 0;
-    padding: 5px;
+/* ==================================
+   Table Styles
+================================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    text-align:center;
+    margin-top:20px;
 }
 
-/* =========================
-   Table Styling
-   ========================= */
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
-    margin-top: 20px;
+th{
+    background:#007BFF;
+    color:white;
+    padding:10px;
+    border:1px solid #ddd;
 }
 
-/* Table Header */
-th {
-    background-color: #007BFF;
-    color: white;
-    padding: 12px;
-    border: 1px solid #ddd;
+td{
+    border:1px solid #ddd;
+    padding:10px;
 }
 
-/* Table Cells */
-td {
-    padding: 10px;
-    border: 1px solid #ddd;
+tr:nth-child(even){
+    background:#f2f2f2;
 }
 
-/* Zebra Striping */
-tr:nth-child(even) {
-    background-color: #f2f2f2;
+/* ==================================
+   Form Outline
+================================== */
+
+.selected-field:focus{
+    outline:3px solid orange;
 }
 
-/* Hover Effect (Optional) */
-tr:hover {
-    background-color: #e6f7ff;
+/* ==================================
+   Visibility Demo
+================================== */
+
+.hidden-box{
+    visibility:hidden;
+    background:lightblue;
+    padding:10px;
 }
 
-
-/* =========================
-   Event Card Box Model
-   ========================= */
-
-.eventCard {
-    width: 300px;
-
-    /* Content spacing */
-    padding: 20px;
-
-    /* Border around element */
-    border: 2px solid #007BFF;
-
-    /* Space outside the border */
-    margin: 20px;
-
-    background-color: #f4f4f4;
-    border-radius: 8px;
+.none-box{
+    display:none;
+    background:lightgreen;
+    padding:10px;
 }
 
+/* ==================================
+   Multi Column Layout
+================================== */
 
-/* =========================
-   Form Field Outline
-   ========================= */
-
-.selected-field:focus {
-    outline: 3px solid orange;
+.news-article{
+    background:white;
+    padding:20px;
+    margin-top:30px;
 }
 
-
-/* =========================
-   Visibility Examples
-   ========================= */
-
-/* Element is invisible but space remains */
-.hidden-box {
-    visibility: hidden;
-    background-color: lightblue;
-    padding: 10px;
-    margin: 10px 0;
+.news-article p{
+    column-count:2;
+    column-gap:30px;
+    column-rule:1px solid gray;
 }
 
-/* Element is completely removed */
-.none-box {
-    display: none;
-    background-color: lightgreen;
-    padding: 10px;
+/* ==================================
+   Responsive Design
+================================== */
+
+@media screen and (max-width:768px){
+
+    .nav-menu{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .event-container{
+        flex-direction:column;
+    }
+
+    .eventCard{
+        width:100%;
+    }
+
+    .eventCard img{
+        width:80%;
+    }
+
+    h1{
+        font-size:6vw;
+    }
+
+    p{
+        font-size:14px;
+    }
+
+    .news-article p{
+        column-count:1;
+    }
 }
